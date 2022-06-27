@@ -7,9 +7,10 @@ import "@openzeppelin/contracts@4.6.0/security/Pausable.sol";
 import "@openzeppelin/contracts@4.6.0/access/Ownable.sol";
 
 contract ERC20 is ERC20, Pausable, Ownable {
+    
     constructor() ERC20("ERC20", "ERCT") {}
-
-    function pause() public onlyOwner {
+    
+     function pause() public onlyOwner {
         _pause();
     }
 
