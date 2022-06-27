@@ -21,8 +21,4 @@ contract ERC20 is ERC20, Pausable, Ownable {
     function mint(address to, uint256 amount) external onlyOwner {
         _mint(to, amount);
     }
-
-    function _beforeTokenTransfer(address from, address to, uint256 amount) internal whenNotPaused {
-        super._beforeTokenTransfer(from, to, amount);
-    }
 }
