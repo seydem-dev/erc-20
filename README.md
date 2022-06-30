@@ -1,4 +1,4 @@
-# Dimaonds
+# Diamonds
 
 **Diamonds is an ERC20 token which can be minted and paused by the owner**
 
