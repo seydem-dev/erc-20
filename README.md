@@ -5,12 +5,12 @@
 ```
 pause()
 ```
-*Toggle function*, which pauses the contract / mint.*
+*Toggle function, which pauses the contract / mint.*
 
 ```
 unpause()
 ```
-*Toggle function*, which unpauses the contract / mint.*
+*Toggle function, which unpauses the contract / mint.*
 
 
 ```
