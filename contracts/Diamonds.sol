@@ -6,9 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract Diamonds is ERC20, Pausable, Ownable {
-
-    constructor() ERC20("Diamonds", "DIAS") {}
+contract Diamonds is ERC20("Diamonds", "DIAS"), Pausable, Ownable {
     
      function pause() external onlyOwner {
         _pause();
