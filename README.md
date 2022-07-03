@@ -1,6 +1,6 @@
 # Diamonds
 
-**Diamonds is an ERC20 token which can only be minted and burned by the owner. $DIAS has an infinite supply and can be burned as long as owner doesn't call ```renounceOwnership()```**
+**Diamonds is an ERC20 token which can only be minted and burned by the owner. $DIAS has an infinite supply and can be burned as long as owner doesn't call `renounceOwnership()`**
 
 ```
 mint()
