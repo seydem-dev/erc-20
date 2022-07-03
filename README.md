@@ -1,6 +1,6 @@
 # Diamonds
 
-**Diamonds is an ERC20 token which can be minted and paused by the owner**
+**Diamonds is an ERC20 token which can be minted and paused by the owner, meaning that it has an infinite supply.**
 
 ```
 pause()
