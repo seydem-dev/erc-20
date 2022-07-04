@@ -7,11 +7,22 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract Diamonds is ERC20("Diamonds", "DIAS"), Ownable {
 
-    function mint(address account, uint256 amount) external onlyOwner {
+    bool public emergencyFalse;
+
+    modifier emergencyPause() {
+        require(emergencyFalse == false, "Emergency pause");
+        _;
+    }
+
+    function toggleEmergencyFalse() external onlyOwner {
+        emergencyFalse = true;
+    }
+
+    function mint(address account, uint256 amount) external emergencyPause {
         _mint(account, amount);
     }
 
-    function burn(address account, uint256 amount) external onlyOwner {
+    function burn(address account, uint256 amount) external emergencyPause {
         _burn(account, amount);
     }
 }
