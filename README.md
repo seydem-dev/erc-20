@@ -1,25 +1,25 @@
-# Diamonds
+# Banana
 
-**$DIAS is an ERC20 token which can be minted, burned and paused (only by the owner). $DIAS has an infinite supply and can be minted and burned as long as owner doesn't call `pause()`**
+**$BANANA is an ERC20 token which can be minted, burned and paused (only by the owner). $BANANA has an infinite supply and can be minted and burned as long as owner doesn't call `pause()`**
 
 ```
 mint()
 ```
-*Function, which mints $DIAS.*
+*Function, which mints $BANANA.*
 
 ```
 burn()
 ```
-*Function, which burns $DIAS.*  
+*Function, which burns $BANANA.*  
   
-*NOTE: BURNING DOESN'T ACTUALLY REFER TO AS TOKENS CEASING TO EXIST. TOKENS ONLY GET TAKEN OUT OF CIRCULATION, HOWEVER IN A WAY THAT THEY CAN'T BE PUT INTO CIRCULATION ANYMORE, WHICH IS ACCOMPLISHED BY TRANSFERRING THEM TO A NULL ADDRESS.*
+*NOTE: BURNING DOESN'T ACTUALLY REFER TO AS TOKENS BEING DESTROYED. TOKENS ONLY GET TAKEN OUT OF CIRCULATION, HOWEVER IN A WAY THAT THEY CAN'T BE PUT INTO CIRCULATION ANYMORE, WHICH IS ACCOMPLISHED BY TRANSFERRING THEM TO A NULL ADDRESS.*
 
 ```
 pause()
 ```
-*Function which is only called by the contract owner and pauses minting and burning $DIAS.*
+*Function which is only called by the contract owner and pauses minting and burning $BANANA.*
 
 ```
 unpause()
 ```
-*Function which is only called by the contract owner and unpauses minting and burning $DIAS.*
+*Function which is only called by the contract owner and unpauses minting and burning $BANANA.*
