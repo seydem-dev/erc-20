@@ -9,8 +9,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract Banana is ERC20("Banana", "BANANA"), ERC20Burnable, Pausable, Ownable {
 
-    function mint(address account, uint256 amount) external whenNotPaused {
-        _mint(account, amount);
+    function mint(address to, uint256 amount) external whenNotPaused {
+        _mint(msg.sender, amount);
     }
 
     function pause() external onlyOwner {
