@@ -8,13 +8,6 @@ mint()
 *Function, which mints $BANANA.*
 
 ```
-burn()
-```
-*Function, which burns $BANANA.*  
-  
-*NOTE: BURNING DOESN'T ACTUALLY REFER TO AS TOKENS BEING DESTROYED. TOKENS ONLY GET TAKEN OUT OF CIRCULATION, HOWEVER IN A WAY THAT THEY CAN'T BE PUT INTO CIRCULATION ANYMORE, WHICH IS ACCOMPLISHED BY TRANSFERRING THEM TO A NULL ADDRESS.*
-
-```
 pause()
 ```
 *Function which is only called by the contract owner and pauses minting and burning $BANANA.*
@@ -23,3 +16,10 @@ pause()
 unpause()
 ```
 *Function which is only called by the contract owner and unpauses minting and burning $BANANA.*
+
+```
+burn()
+```
+*Function, which burns $BANANA.*  
+  
+**Sidenote:** *BURNING DOESN'T ACTUALLY REFER TO AS TOKENS BEING DESTROYED. TOKENS ONLY GET TAKEN OUT OF CIRCULATION, HOWEVER IN A WAY THAT THEY CAN'T BE PUT INTO CIRCULATION ANYMORE, WHICH IS ACCOMPLISHED BY TRANSFERRING THEM TO A NULL ADDRESS.*
