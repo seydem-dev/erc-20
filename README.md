@@ -1,6 +1,80 @@
 # Banana
+**$BANANA is an ERC20 token which can be minted, burned and paused. $BANANA has an infinite supply and can be minted and burned as long as owner doesn't call `pause()`**
 
-**$BANANA is an ERC20 token which can be minted, burned and paused (only by the owner). $BANANA has an infinite supply and can be minted and burned as long as owner doesn't call `pause()`**
+```
+approve()
+```
+*Function to approve another address to spend your tokens on your behalf.*
+
+```
+burnFrom()
+```
+*Burn function specifically made for approved address to burn tokens.*
+
+```
+decreaseAllowance()
+```
+*Decrease amount of tokens approved address is allowed to transfer on your behalf.*
+
+```
+increaseAllowance()
+```
+*Increase amount of tokens approved address is allowed to transfer on your behalf.*
+
+```
+renounceOwnership()
+```
+*Remove ownership of smart contract.*
+
+```
+transfer()
+```
+*Function enabling transfer of ERC20 tokens.*
+
+```
+transferFrom()
+```
+*Transfer function specifically made for approved address to transfer tokens.*
+
+```
+transferOwnership()
+```
+*Change owner of smart contract.*
+
+```
+allowance()
+```
+*Function to determine how much tokens approved address is allowed to spend.*
+
+```
+balanceOf()
+```
+*Get token balance of any user.*
+
+```
+decimals()
+```
+*Decimals for ERC20 token, most of the time 18 decimals meaning 0.000000000000000001 is the lowest amount allowed to transfer.*
+
+```
+name()
+```
+*Token name, like ETHER.*
+
+```
+owner()
+```
+*Address of smart contract deployer.*
+
+```
+symbol()
+```
+*Token symbol or ticker, like ETH.*
+
+```
+totalSupply()
+```
+*Every ERC20 token in existence.*
 
 ```
 mint()
@@ -21,5 +95,3 @@ unpause()
 burn()
 ```
 *Function, which burns $BANANA.*  
-  
-**Sidenote:** *BURNING DOESN'T ACTUALLY REFER TO AS TOKENS BEING DESTROYED. TOKENS ONLY GET TAKEN OUT OF CIRCULATION, HOWEVER IN A WAY THAT THEY CAN'T BE PUT INTO CIRCULATION ANYMORE, WHICH IS ACCOMPLISHED BY TRANSFERRING THEM TO A NULL ADDRESS.*
