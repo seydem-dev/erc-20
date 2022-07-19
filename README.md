@@ -1,5 +1,5 @@
 # Banana
-**$BANANA is an ERC20 token which can be minted, burned and paused. $BANANA has an infinite supply and can be minted and burned as long as owner doesn't call `pause()`**
+**$BANANA is an ERC20 token which is mintable, ownable, pausable and burnable with an infinite supply. Users can be mint and burn as long as owner doesn't call `pause()`**
 
 ```
 approve()
