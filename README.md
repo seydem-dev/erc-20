@@ -39,47 +39,47 @@ transferFrom()
 ```
 transferOwnership()
 ```
-*Change owner of smart contract.*
+*Changes owner of smart contract.*
 
 ```
 allowance()
 ```
-*Function to determine how much tokens approved address is allowed to spend.*
+*Determines how much tokens approved address is allowed to spend.*
 
 ```
 balanceOf()
 ```
-*Get token balance of any user.*
+*Returns token balance of any address.*
 
 ```
 decimals()
 ```
-*Decimals for ERC20 token, most of the time 18 decimals meaning 0.000000000000000001 is the lowest amount allowed to transfer.*
+*Decimals for ERC20 token, most of the time 18 decimals, meaning 0.000000000000000001 is the lowest amount allowed to transfer.*
 
 ```
 name()
 ```
-*Token name, like ETHER.*
+*Sets token name, like ETHER.*
 
 ```
 owner()
 ```
-*Address of smart contract deployer.*
+*Returns address of smart contract deployer.*
 
 ```
 symbol()
 ```
-*Token symbol or ticker, like ETH.*
+*Sets token symbol or ticker, like ETH.*
 
 ```
 totalSupply()
 ```
-*Every ERC20 token in existence.*
+*Returns amount of all token in existence.*
 
 ```
 mint()
 ```
-*Function, which mints $BANANA.*
+*Function which mints $BANANA.*
 
 ```
 pause()
@@ -94,4 +94,4 @@ unpause()
 ```
 burn()
 ```
-*Function, which burns $BANANA.*  
+*Function which burns $BANANA.*  
