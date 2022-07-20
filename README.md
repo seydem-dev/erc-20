@@ -59,7 +59,7 @@ decimals()
 ```
 name()
 ```
-*Sets token name, like ETHER.*
+*Returns token name, like ETHER.*
 
 ```
 owner()
@@ -69,7 +69,7 @@ owner()
 ```
 symbol()
 ```
-*Sets token symbol or ticker, like ETH.*
+*Returns token symbol or ticker, like ETH.*
 
 ```
 totalSupply()
@@ -79,19 +79,24 @@ totalSupply()
 ```
 mint()
 ```
-*Function which mints $BANANA.*
+*Function which creates $BANANA.*
 
 ```
 pause()
 ```
-*Function which is only called by the contract owner and pauses minting and burning $BANANA.*
+*Function only called by the contract owner which pauses minting and burning $BANANA.*
 
 ```
 unpause()
 ```
-*Function which is only called by the contract owner and unpauses minting and burning $BANANA.*
+*Function only called by the contract owner which unpauses minting and burning $BANANA.*
 
 ```
 burn()
 ```
 *Function which burns $BANANA.*  
+
+```
+paused
+```
+*Boolean required for pausing and unpausing `mint()` and `burn()`*
