@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/security/Pausable.sol";
 contract Banana is ERC20("Banana", "BANANA"), ERC20Burnable, Ownable, Pausable {
 
     function mint(uint256 amount) external whenNotPaused {
-        _mint(msg.sender, amount);
+        _safeMint(msg.sender, amount);
     }
 
     function pause() external onlyOwner {
